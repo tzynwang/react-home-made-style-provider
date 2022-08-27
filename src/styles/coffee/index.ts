@@ -1,6 +1,9 @@
-import type { DynamicCss } from '../types';
+import type { Interpolation, Theme } from '../types';
 
-const coffee: DynamicCss = {
+const coffee: Interpolation<Theme> = {
+  height: '100vh',
+  width: '100vw',
+  padding: '16px',
   backgroundColor: '#211720',
   color: '#d5c8d5',
   '& button': {
@@ -10,6 +13,7 @@ const coffee: DynamicCss = {
     fontSize: 'inherit',
     backgroundColor: '#dc944c',
     color: '#3d1f00',
+    cursor: 'pointer',
   },
 };
 

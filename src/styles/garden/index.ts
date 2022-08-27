@@ -1,6 +1,9 @@
-import type { DynamicCss } from '../types';
+import type { Interpolation, Theme } from '../types';
 
-const garden: DynamicCss = {
+const garden: Interpolation<Theme> = {
+  height: '100vh',
+  width: '100vw',
+  padding: '16px',
   backgroundColor: '#e9e7e7',
   color: '#100f0f',
   '& button': {
@@ -11,6 +14,7 @@ const garden: DynamicCss = {
     backgroundColor: '#5c7f67',
     color: '#c7ffd9',
     borderRadius: '8px',
+    cursor: 'pointer',
   },
 };
 

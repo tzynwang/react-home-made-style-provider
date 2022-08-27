@@ -1,13 +1,12 @@
 import { createContext, Context, Dispatch, SetStateAction } from 'react';
 
-function createStyleContext<T>(): Context<{
+interface StyleContext<T> {
   styleName: T;
   setStyleName: Dispatch<SetStateAction<T>>;
-} | null> {
-  return createContext<null | {
-    styleName: T;
-    setStyleName: Dispatch<SetStateAction<T>>;
-  }>(null);
+}
+
+function createStyleContext<T>(): Context<StyleContext<T> | null> {
+  return createContext<null | StyleContext<T>>(null);
 }
 
 export default createStyleContext;

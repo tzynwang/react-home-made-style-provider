@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-home-made-style-provider/static/css/main.6b7467cc.css",
+    "main.js": "/react-home-made-style-provider/static/js/main.cc79615d.js",
+    "index.html": "/react-home-made-style-provider/index.html",
+    "main.6b7467cc.css.map": "/react-home-made-style-provider/static/css/main.6b7467cc.css.map",
+    "main.cc79615d.js.map": "/react-home-made-style-provider/static/js/main.cc79615d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b7467cc.css",
+    "static/js/main.cc79615d.js"
+  ]
+}

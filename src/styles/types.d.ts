@@ -1,3 +1,1 @@
-import { Interpolation, Theme } from '@emotion/react';
-
-export type DynamicCss = Interpolation<Theme>;
+export type { Interpolation, Theme } from '@emotion/react';

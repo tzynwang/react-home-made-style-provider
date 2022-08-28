@@ -1,5 +1,6 @@
 import React, { memo } from 'react';
 import Badge from '@Components/Common/Badge';
+import Stack from '@Components/Common/Stack';
 import StyleToggle from '@Components/Common/StyleToggle';
 
 const BADGE_ARRAY: string[] = ['here', 'are', 'some', 'badges'];
@@ -17,21 +18,23 @@ function App(): React.ReactElement {
         Delectus, repellendus.
       </div>
       <hr />
-      <div className="Stack">
+      <Stack direction="row">
         {BADGE_ARRAY.map((badge, index) => (
           <Badge text={badge} key={index} />
         ))}
-      </div>
+      </Stack>
       <hr />
-      <label htmlFor="checkBox" className="CheckBoxLabel">
-        checkbox
-        <input type="checkbox" name="checkBox" id="checkBox" />
-      </label>
-      <label htmlFor="toggle" className="ToggleLabel">
-        toggle
-        <input type="checkbox" id="toggle" />
-        <span className="ToggleTrack"></span>
-      </label>
+      <Stack>
+        <label htmlFor="checkBox" className="CheckBoxLabel">
+          checkbox
+          <input type="checkbox" name="checkBox" id="checkBox" />
+        </label>
+        <label htmlFor="toggle" className="ToggleLabel">
+          toggle
+          <input type="checkbox" id="toggle" />
+          <span className="ToggleTrack"></span>
+        </label>
+      </Stack>
     </React.Fragment>
   );
 }

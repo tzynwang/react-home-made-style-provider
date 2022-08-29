@@ -28,6 +28,7 @@ function App(): React.ReactElement {
         <label htmlFor="checkBox" className="CheckBoxLabel">
           checkbox
           <input type="checkbox" name="checkBox" id="checkBox" />
+          <span className="CheckBoxCheckIcon"></span>
         </label>
         <label htmlFor="toggle" className="ToggleLabel">
           toggle

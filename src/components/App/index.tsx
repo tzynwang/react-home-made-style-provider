@@ -2,6 +2,7 @@ import React, { memo } from 'react';
 import Badge from '@Components/Common/Badge';
 import Stack from '@Components/Common/Stack';
 import StyleToggle from '@Components/Common/StyleToggle';
+import InputTextDemo from '@Components/Demo/InputTextDemo';
 
 const BADGE_ARRAY: string[] = ['here', 'are', 'some', 'badges'];
 
@@ -36,6 +37,8 @@ function App(): React.ReactElement {
           <span className="ToggleTrack"></span>
         </label>
       </Stack>
+      <hr />
+      <InputTextDemo />
     </React.Fragment>
   );
 }

@@ -33,7 +33,7 @@ function Container(props: ContainerProps): React.ReactElement {
         height: '100%',
         margin: 'auto',
         display: 'flex',
-        padding: disablePadding ? '0' : '16px',
+        padding: disablePadding ? undefined : '16px',
         [MEDIA_QUERY.md]: {
           maxWidth: '720px',
         },
@@ -42,7 +42,7 @@ function Container(props: ContainerProps): React.ReactElement {
         },
         [MEDIA_QUERY.xl]: {
           maxWidth: '1200px',
-          padding: disablePadding ? '0' : '24px',
+          padding: disablePadding ? undefined : '24px',
         },
       }),
     [disablePadding]

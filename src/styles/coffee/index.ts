@@ -109,6 +109,44 @@ const coffee: Interpolation<Theme> = {
       transform: 'translate(100%, -50%) rotate(45deg)',
     },
   },
+  '& .InputTextLabel': {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '4px',
+    '& .InputTextLabelText': {
+      marginBottom: '4px',
+    },
+    '& input[type="text"]': {
+      minHeight: '32px',
+      display: 'flex',
+      alignItems: 'center',
+      padding: '8px',
+      border: 'none',
+      outline: '1px solid transparent',
+      fontFamily: 'inherit',
+      fontSize: 'inherit',
+      backgroundColor: '#dc944c',
+      color: '#3d1f00',
+      transition: 'outline .2s ease',
+    },
+    '& input[type="text"]::placeholder': {
+      color: '#3d1f00',
+    },
+    '& input[type="text"]::selection': {
+      backgroundColor: '#211720',
+      color: '#dc944c',
+    },
+  },
+  '& .InputTextLabel.InputTextError': {
+    '& input[type="text"]': {
+      position: 'relative',
+      outline: '1px solid #c11616',
+      boxShadow: '0 0 4px #c11616',
+    },
+    '& .InputTextHelperText': {
+      color: '#c11616',
+    },
+  },
 };
 
 export default coffee;

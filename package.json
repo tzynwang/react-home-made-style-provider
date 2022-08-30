@@ -5,6 +5,7 @@
   "homepage": "https://tzynwang.github.io/react-home-made-style-provider",
   "dependencies": {
     "@babel/core": "^7.16.0",
+    "@emotion/css": "^11.10.0",
     "@emotion/react": "^11.10.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@svgr/webpack": "^5.5.0",

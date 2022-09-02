@@ -415,6 +415,7 @@ module.exports = function (webpackEnv) {
                   'babel-preset-react-app/webpack-overrides'
                 ),
                 presets: [
+                  require.resolve('@emotion/babel-preset-css-prop'),
                   [
                     require.resolve('babel-preset-react-app'),
                     {

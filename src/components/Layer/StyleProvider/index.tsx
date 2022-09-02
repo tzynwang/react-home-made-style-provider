@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import React, { memo, useState, useEffect } from 'react';
 import Style, { StyleContext } from '@Models/style';
 import type {

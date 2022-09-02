@@ -1,4 +1,3 @@
-/** @jsxImportSource @emotion/react */
 import React, { memo, useMemo } from 'react';
 import cn from 'classnames';
 import type { StackProps } from './types';
